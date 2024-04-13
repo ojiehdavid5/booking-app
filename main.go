@@ -12,6 +12,7 @@ func main(){
 
 
 	fmt.Println("Welcome to",conferenceName, "booking application");
+	fmt.Println("we have a total of ",conferenceTickets," tickets and  remaining",remainingTickets,)
 	fmt.Println("Get your ticket here to attend ");
 	
 
