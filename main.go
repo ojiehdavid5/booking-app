@@ -1,11 +1,11 @@
 package main 
 
 
-import 'fmt'
+import "fmt"
 
 
 
-function main(){
-	fmt.Print('Hello world');
+func main(){
+	fmt.Println("Hello world");
 
 }
