@@ -36,9 +36,11 @@ fmt.Scan(&email);
 fmt.Printf("Enter the number of ticket");
 fmt.Scan(&tickets);
 
-remainingTickets-tickets
+remainingTickets=remainingTickets-tickets;
 
 fmt.Printf("Thank you %v %v for getting %v you will get a confirmation mail at %v\n",firstName,lastName,tickets,email,);
+
+fmt.Printf("there is only %v remaining",remainingTickets,);
 
 
 
