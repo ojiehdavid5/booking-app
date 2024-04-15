@@ -9,6 +9,8 @@ func main(){
 	conferenceName :="Go Conference ";
 	const conferenceTickets int=50;
 	var remainingTickets uint=50;
+
+	var bookings=[50]string{"Nana","david","chuks",}
 	
 
 	fmt.Printf("conferenceName is %T conferenceTickets is %T  remainingTickets is a %T",conferenceName,conferenceTickets,remainingTickets);
