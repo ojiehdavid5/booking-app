@@ -20,7 +20,7 @@ func main(){
 	
 var firstName string
 var lastName string;
-var email
+var email string;
 
 fmt.Printf("Enter your firstName");
 fmt.Scan(&firstName);
@@ -28,15 +28,8 @@ fmt.Scan(&firstName);
 fmt.Printf("Enter your secondname");
 fmt.Scan(&lastName);
 
-
-var userTickets int
-
-
-
-userName="chuks";
-userTickets=2
-fmt.Println(userName)
-fmt.Printf("usern %v booked %v tickets",userName,userTickets,)
+fmt.Printf("Enter your email");
+fmt.Scan(&email);
 
 
 }
