@@ -18,9 +18,19 @@ func main(){
 	fmt.Printf("we have a total of %v  tickets and  remaining %v",remainingTickets,conferenceTickets)
 	fmt.Println("Get your ticket here to attend ");
 	
-var userName string
+var firstName string
+var lastName string;
+var email
+
+fmt.Printf("Enter your firstName");
+fmt.Scan(&firstName);
+
+fmt.Printf("Enter your secondname");
+fmt.Scan(&lastName);
+
 
 var userTickets int
+
 
 
 userName="chuks";
