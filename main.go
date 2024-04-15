@@ -21,7 +21,7 @@ func main(){
 var firstName string
 var lastName string;
 var email string;
-var tickets int;
+var tickets uint;
 
 fmt.Printf("Enter your firstName");
 fmt.Scan(&firstName);
@@ -35,6 +35,8 @@ fmt.Scan(&email);
 
 fmt.Printf("Enter the number of ticket");
 fmt.Scan(&tickets);
+
+remainingTickets-tickets
 
 fmt.Printf("Thank you %v %v for getting %v you will get a confirmation mail at %v\n",firstName,lastName,tickets,email,);
 
