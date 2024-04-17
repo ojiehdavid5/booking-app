@@ -1,7 +1,11 @@
 package main 
 
 
-import "fmt"
+import(
+	"fmt"
+	"strings"
+
+) 
 
 
 
@@ -61,6 +65,27 @@ fmt.Printf("slice type:%v\n ",len(bookings));
 fmt.Printf("Thank you %v %v for getting %v you will get a confirmation mail at %v\n",firstName,lastName,tickets,email,);
 
 fmt.Printf("there is only %v remaining",remainingTickets,);
+
+
+firstNames:=[]string{}
+
+for _,booking:=range bookings{
+	var names=strings.Fields(booking)
+
+	var firstName=names[0]
+	firstNames=append(firstNames,firstName)
+}
+
+fmt.Printf("the first name of the booking are %v\n ",firstNames);
+
+noTicketRemaining:=remainingTickets==0
+
+if noTicketRemaining{
+
+	fmt.Print("The conference ticket are booked out already we are so sorry ")
+	break;
+
+}
 
 
 
