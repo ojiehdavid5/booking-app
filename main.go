@@ -32,8 +32,10 @@ for{
 // bookings[0]="Nana"
 // bookings[1]="chuks"
 
+for  remainingTickets > 0 && len(bookings)<50{
 
-var firstName string
+
+var firstName string;
 var lastName string;
 var email string;
 var tickets uint;
@@ -41,7 +43,7 @@ var tickets uint;
 fmt.Printf("Enter your firstName\n");
 fmt.Scan(&firstName);
 
-fmt.Printf("Enter your secondname");
+fmt.Printf("Enter your Lastname");
 fmt.Scan(&lastName);
 
 fmt.Printf("Enter your email");
@@ -51,7 +53,8 @@ fmt.Scan(&email);
 fmt.Printf("Enter the number of ticket");
 fmt.Scan(&tickets);
 
-remainingTickets=remainingTickets-tickets;
+if tickets <= remainingTickets{
+	remainingTickets=remainingTickets-tickets;
 bookings=append(bookings,firstName +" "+lastName)
 
 
@@ -72,6 +75,10 @@ firstNames:=[]string{}
 for _,booking:=range bookings{
 	var names=strings.Fields(booking)
 
+
+
+	
+
 	var firstName=names[0]
 	firstNames=append(firstNames,firstName)
 }
@@ -90,11 +97,19 @@ if noTicketRemaining{
 
 
 
+
+
+}else{
+	fmt.Printf("We only have %v tickets,so you can't book %v tickets\n ", remainingTickets, tickets);
+	break;
+
+}
+
 	
 
 
 }
 
-
+}
 
 }
