@@ -56,7 +56,14 @@ fmt.Scan(&email);
 fmt.Printf("Enter the number of ticket");
 fmt.Scan(&tickets);
 
-if tickets <= remainingTickets{
+  isValidName :=len(firstName)>= 2  && len(lastName)>=2;
+  isValidEmail:=strings.Contains(email,"@")
+  isValidTicketNumber:=tickets > 0 && tickets <= remainingTickets;
+
+
+//   isInValidCity:= city!="singpore" && city != "London";
+;
+if isValidName && isValidEmail && isValidTicketNumber{
 	remainingTickets=remainingTickets-tickets;
 bookings=append(bookings,firstName +" "+lastName)
 
@@ -103,7 +110,7 @@ if noTicketRemaining{
 
 
 }else{
-	fmt.Printf("We only have %v tickets,so you can't book %v tickets\n ", remainingTickets, tickets);
+	fmt.Printf("Your input data is invalid\n");
 	break;
 
 }
