@@ -44,7 +44,10 @@ fmt.Printf("Enter your firstName\n");
 fmt.Scan(&firstName);
 
 fmt.Printf("Enter your Lastname");
+
+
 fmt.Scan(&lastName);
+
 
 fmt.Printf("Enter your email");
 fmt.Scan(&email);
