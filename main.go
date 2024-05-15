@@ -68,9 +68,10 @@ if isValidName && isValidEmail && isValidTicketNumber{
 bookings=append(bookings,firstName +" "+lastName)
 
 
-fmt.Printf("The whole slice:%v\n ",bookings);
-fmt.Printf("The first value :%v\n ",bookings[0]);
-fmt.Printf("slice type:%v\n ",len(bookings));
+// fmt.Printf("The whole slice:%v\n ",bookings);
+// fmt.Printf("The first value :%v\n ",bookings[0]);
+// fmt.Printf("slice type:%T\n ",bookings);
+// fmt.Printf("slice length:%v\n ",len(bookings));
 
 
 
@@ -78,6 +79,8 @@ fmt.Printf("slice type:%v\n ",len(bookings));
 fmt.Printf("Thank you %v %v for getting %v you will get a confirmation mail at %v\n",firstName,lastName,tickets,email,);
 
 fmt.Printf("there is only %v remaining",remainingTickets,);
+
+fmt.Printf("These are all our bookings:%v\n",bookings);
 
 
 firstNames:=[]string{}
